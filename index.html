@@ -1,24 +1,109 @@
-    <!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Forms</title>
-    </head>
-    <body>
-        <h1>Formulário</h1>
-        <form id="dados" name="dados" method="post" action="/aplicacao">
-            <fieldset>
-                <legend>Dados Pessoais</legend>
-                <p>Nome</p>
-                <p>Endereço</p>
-                <p>Contatos</p>
-            </fieldset>
-            <fieldset>
-                <legend>Experiencias Profissionais</legend>
-                <p>Emprego atual</p>
-                <p>Antigo emprego</p>
-            </fieldset>
-        </form>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forms</title>
+	</head>
+	<body>
+		<h1>Formulário</h1>
+		<h2>1 - Conceito de formulários</h2>
+		<form id="dados1" name="dados" method="post" action="/aplicacao">
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				<p>Nome</p>
+				<p>Endereço</p>
+				<p>Contatos</p>
+			</fieldset>
+			<fieldset>
+				<legend>Experiencias Profissionais</legend>
+				<p>Emprego atual</p>
+				<p>Antigo emprego</p>
+			</fieldset>
+		</form>
+		<h2>2 - Label e Input</h2>
+		<form action="" id="dados2" name="dados2" method="post">
+			<fieldset>
+				<legend>Campo Text</legend>
+				<label for="usuario">Usuário</label>
+				<input type="text" id="usuario" name="usuario" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo Password</legend>
+				<label for="senha">Senha</label>
+				<input type="text" id="senha" name="senha" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo Email</legend>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo Url</legend>
+				<label for="url">Url</label>
+				<input type="url" id="url" name="url" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo Search</legend>
+				<label for="search">Pesquisa</label>
+				<input type="search" id="search" name="search" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo Telefone</legend>
+				<label for="tel">Telefone</label>
+				<input type="tel" id="tel" name="tel" />
+			</fieldset>
+			<!-- Semelhante ao campo text, mas pode abrir diretamente o teclado numérico no celular por exemplo -->
+
+			<fieldset>
+				<legend>Campo Color</legend>
+				<label for="cor">Selecione uma cor</label>
+				<input type="color" id="cor" name="cor" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo File</legend>
+				<label for="arquivo">Selecione um arquivo</label>
+				<input type="file" id="arquivo" name="arquivo" />
+			</fieldset>
+		</form>
+		<h2>3 - Campos para datas</h2>
+		<form id="dados3" name="dados3" method="post" action="">
+			<fieldset>
+				<legend>Campo Date</legend>
+				<label for="data">Campo de Data</label>
+				<input type="date" id="data" name="data" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo Hora</legend>
+				<label for="hora">Campo de hora</label>
+				<input type="time" id="hora" name="hora" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo DateTimeLocal</legend>
+				<label for="datetime">Data e Hora</label>
+				<input type="datetime-local" id="datetime" name="datetime" />
+				<!-- Atenção, o type datetime foi descontinuado, use o datetime-local -->
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo de Week</legend>
+				<label for="semana">Campo de Semana</label>
+				<input type="week" id="semana" name="semana" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Campo de Month</legend>
+				<label for="month">Campo de Mês</label>
+				<input type="month" id="month" name="month" />
+			</fieldset>
+		</form>
+	</body>
+</html>
