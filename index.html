@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
 		<title>Forms</title>
 	</head>
 	<body>
@@ -107,23 +108,115 @@
 		</form>
 		<h2>4 - Campos para números</h2>
 		<form id="dados4" name="dados4" method="post" action="">
-			
 			<fieldset>
 				<legend>Campo de número</legend>
 				<label for="numero">Campo numérico</label>
-				<input type="number" name="numero" id="numero"
-				min="0" max="10" step="2" value="5">
+				<input
+					type="number"
+					name="numero"
+					id="numero"
+					min="0"
+					max="10"
+					step="2"
+					value="5"
+				/>
 			</fieldset>
 
 			<fieldset>
 				<legend>Campo Range</legend>
 				<label for="escala">Campo Range</label>
-				<input type="range" name="escala" id="escala"
-				min="0" max="10" step="2" value="8">
+				<input
+					type="range"
+					name="escala"
+					id="escala"
+					min="0"
+					max="10"
+					step="2"
+					value="8"
+				/>
+			</fieldset>
+		</form>
+		<h2>5 - Campo Radio e Chekbox</h2>
+		<form action="" id="dados4" name="dados4" method="post">
+			<fieldset>
+				<legend>Campo Radio</legend>
+				<label for="masculino">Masculino</label>
+				<input
+					type="radio"
+					name="sexo"
+					id="masculino"
+					value="masculino"
+					checked
+				/>
+
+				<label for="feminino">Feminino</label>
+				<input type="radio" name="sexo" id="feminino" value="feminino" />
 			</fieldset>
 
-			
+			<fieldset>
+				<legend>Campo Checkbox</legend>
+				<label for="checkbox1">Checkbox 1</label>
+				<input
+					type="checkbox"
+					name="checkbox1"
+					id="checkbox1"
+					value="checkbox1"
+					checked
+				/>
 
+				<label for="checkbox2">Checkbox 2</label>
+				<input
+					type="checkbox"
+					name="checkbox2"
+					id="checkbox2"
+					value="checkbox2"
+				/>
+			</fieldset>
+		</form>
+		<h2>6 - Campos de Seleção</h2>
+		<form action="" id="dados5" name="dados5" method="post">
+			<fieldset>
+				<legend>Select</legend>
+				<label for="atuacao">Área de atuação</label>
+				<select name="atuacao" id="atuacao">
+					<option value="0" disabled selected>Selecione sua opção</option>
+					<option value="front">Front-End</option>
+					<option value="back">Back-End</option>
+					<option value="full">Fullstack</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Datalist</legend>
+				<input list="linguagens" id="langlist" />
+				<datalist id="linguagens">
+					<option value="HTML"></option>
+					<option value="CSS"></option>
+					<option value="JAVA"></option>
+					<option value="JAVASCRIPT"></option>
+				</datalist>
+			</fieldset>
+		</form>
+		<h2>7 - Textarea - Button</h2>
+		<form action="" id="dados6" name="dados6" method="post">
+			<fieldset>
+				<legend>Campo Textarea</legend>
+				<label for="mensagem">Mensagem</label><br />
+				<textarea name="mensagem" id="mensagem"></textarea>
+			</fieldset>
+
+			<fieldset>
+				<legend>Botões Input</legend>
+				<input type="submit" name="" id="" value="Criar conta" />
+				<input type="reset" name="" id="" value="Limpar dados" />
+				<input type="button" name="" id="" value="JavaScript" />
+			</fieldset>
+
+			<fieldset>
+				<legend>Botões Input</legend>
+				<button type="submit">Criar Conta</button>
+				<button type="reset">Limpar dados</button>
+				<button type="button">JavaScript</button>
+			</fieldset>
 		</form>
 	</body>
 </html>
