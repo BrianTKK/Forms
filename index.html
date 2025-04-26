@@ -218,5 +218,37 @@
 				<button type="button">JavaScript</button>
 			</fieldset>
 		</form>
+		<h2>8 - Atributos Importantes</h2>
+		<form action="" id="dados7" name="dados7" method="post">
+			<fieldset>
+				<legend></legend>
+				<label for="usuario2">Usuário</label>
+				<input
+					type="text"
+					id="usuario2"
+					name="usuario2"
+					required
+					placeholder="Ex: user123789"
+					minlength="5"
+					maxlength="15"
+					autofocus
+				/>
+				<p>
+					Atributo 'required' torna o campo obrigatório; <br />
+					'placeholder' coloca um texto dentro do campo; <br>
+					'minlength' define o número mínimo de caracteres <br>
+					'maxlength' define o número máximo de caracteres <br />
+					'autofocus' faz o campo receber o foco automaticamente <br />
+				</p>
+				<label for="usuario3">Exemplo</label>
+				<input type="text" id="usuario3" name="usuario3" placeholder="BrianTK" readonly />
+				<p>Atributo 'readonly' impossibilita de digitar no campo</p>
+			</fieldset>
+			<fieldset>
+				<input type="submit" value="Enviar" />
+				<input type="reset" value="Limpar" disabled/>
+				<p>Atributo 'disable' deixa o elemento desativado</p>
+			</fieldset>
+		</form>
 	</body>
 </html>
